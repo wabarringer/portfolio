@@ -14,7 +14,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleChange(e) {
+  function handleInputChange(e) {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
@@ -30,10 +30,6 @@ export default function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    alert(
-      `Thank you, ${name}, for your submission! At this point in time, it will not be received as the backend code for the form has not yet been created.`
-    );
-
     setName("");
     setEmail("");
     setMessage("");
@@ -47,56 +43,37 @@ export default function Contact() {
 
       <div>
         <h3>Email: wabarringer@gmail.com</h3>
+        <p>
+          Currently form submission is down. If you'd like to contact me please
+          use the email address provided above.
+        </p>
       </div>
-      <form onSubmit={handleFormSubmit}>
-        <tr>
-          <td>
-            <label htmlFor="name">Name: </label>
-          </td>
-          <td className="center">
-            <input
-              type="text"
-              placeholder="Name"
-              name="name"
-              onChange={handleChange}
-              value={name}
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label htmlFor="email">Email: </label>
-          </td>
-          <td>
-            <input
-              type="email"
-              placeholder="Email"
-              onChange={handleChange}
-              value={email}
-              name="email"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label htmlFor="message">Message: </label>
-          </td>
-          <td>
-            <textarea
-              type="text"
-              placeholder="Message"
-              onChange={handleChange}
-              value={message}
-              name="message"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <button type="submit">Submit</button>
-          </td>
-        </tr>
+
+      <form className="form">
+        <input
+          type="text"
+          placeholder="Name"
+          name="name"
+          onChange={handleInputChange}
+          value={name}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          onChange={handleInputChange}
+          value={email}
+          name="email"
+        />
+        <input
+          type="textarea"
+          placeholder="Message"
+          onChange={handleInputChange}
+          value={message}
+          name="message"
+        />
+        <button type="button" onClick={handleFormSubmit}>
+          Submit
+        </button>
       </form>
     </main>
   );

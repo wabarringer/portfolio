@@ -36,7 +36,7 @@ const projects = [
   },
 ];
 
-export default function Portfolio() {
+function Portfolio() {
   return (
     <main>
       <div>
@@ -48,16 +48,27 @@ export default function Portfolio() {
           return (
             <div key={element.id}>
               <div>
-                <a href={element.link} target="_blank">
-                  <img src={element.image} />
+                <a
+                  href={element.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={element.image}
+                    alt="Screan capture of the project"
+                  />
                 </a>
               </div>
 
-              <div className="large-right">
+              <div>
                 <p>{element.title}</p>
                 <p>
                   <strong>Link to Repository: </strong>
-                  <a href={element.githubLink} target="_blank">
+                  <a
+                    href={element.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     GitHub
                   </a>
                 </p>
@@ -69,3 +80,5 @@ export default function Portfolio() {
     </main>
   );
 }
+
+export default Portfolio;
