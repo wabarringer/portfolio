@@ -1,6 +1,25 @@
 import React from "react";
-import PortfolioContainer from "./components/PortfolioContainer";
+import { Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import About from "./components/pages/about";
+import Portfolio from "./components/pages/portfolio";
+import Contact from "./components/pages/contact";
+import Resume from "./components/pages/resume";
+import Footer from "./components/Footer";
 
-const App = () => <PortfolioContainer />;
+function App() {
+  return (
+    <body>
+      <Navigation />
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </body>
+  );
+}
 
 export default App;

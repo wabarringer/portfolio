@@ -11,13 +11,13 @@
 // THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 
 import React, { useState } from "react";
-import NavTabs from "./NavTabs";
+import Header from "./Header";
 import About from "./pages/about";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import Resume from "./pages/resume";
 
-export default function PortfolioContainer() {
+function Navigation() {
   const [currentPage, setCurrentPage] = useState("Home");
 
   // Return/render corresponding component from ./pages
@@ -34,16 +34,17 @@ export default function PortfolioContainer() {
     if (currentPage === "resume") {
       return <Resume />;
     }
+    return <About />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      {/* Pass currentPage from state and the function to update */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Call renderPage method to return the correct page  */}
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>
   );
 }
+
+export default Navigation;
