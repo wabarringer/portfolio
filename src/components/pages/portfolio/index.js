@@ -3,8 +3,13 @@
 
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import gitHubLogo from "./img/github-mark.png";
 import Llama from "./img/anoma-drama-llama.JPG";
 import Stream from "./img/streamosaurus.JPG";
+import Chess from "./img/logo.png";
+import Blog from "./img/tech-blog.JPG";
+import Weather from "./img/weather.JPG";
+import Quiz from "./img/quiz.JPG";
 import "./style.css";
 
 const projects = [
@@ -35,6 +40,50 @@ const projects = [
 
     githubLink: "https://github.com/wabarringer/project-1",
   },
+  {
+    id: uuidv4(),
+
+    image: Chess,
+
+    title: "Friends In Check (unfinished)",
+
+    link: "https://wabarringer.github.io/project-3-FRONT/",
+
+    githubLink: "https://github.com/wabarringer/project-3-FRONT",
+  },
+  {
+    id: uuidv4(),
+
+    image: Blog,
+
+    title: "Tech Blog",
+
+    link: "https://tech-blog-wabarringer.herokuapp.com/home",
+
+    githubLink: "https://github.com/wabarringer/tech-blog",
+  },
+  {
+    id: uuidv4(),
+
+    image: Weather,
+
+    title: "Weather Dashboard",
+
+    link: "https://wabarringer.github.io/weather-dashboard/",
+
+    githubLink: "https://github.com/wabarringer/weather-dashboard",
+  },
+  {
+    id: uuidv4(),
+
+    image: Quiz,
+
+    title: "WA Quiz",
+
+    link: "https://wabarringer.github.io/quiz/",
+
+    githubLink: "https://github.com/wabarringer/quiz",
+  },
 ];
 
 function Portfolio() {
@@ -55,7 +104,11 @@ function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GitHub Repo
+                    <img
+                      className="gitHub-logo"
+                      src={gitHubLogo}
+                      alt="The GitHub logo"
+                    />
                   </a>
                 </div>
                 <div>
@@ -65,6 +118,7 @@ function Portfolio() {
                     rel="noopener noreferrer"
                   >
                     <img
+                      className="project-img"
                       src={element.image}
                       alt="Screan capture of the project"
                     />

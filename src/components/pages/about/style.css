@@ -14,6 +14,7 @@
 
 .page-container-about img {
   width: 300px;
+  border: #cfaf8c solid 2px;
 }
 
 .page-container-about p {

@@ -8,9 +8,20 @@
   min-height: 87.59vh;
 }
 
-.page-container-portfolio img {
+.gitHub-logo {
+  width: 35px;
+}
+
+.project-img {
+  background-color: #2d080a;
   width: 500px;
   height: 300px;
+  opacity: 50%;
+  border: #2d080a solid 3px;
+}
+
+.project-img:hover {
+  opacity: 100%;
 }
 
 .page-title-portfolio {

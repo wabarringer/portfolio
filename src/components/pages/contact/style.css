@@ -35,6 +35,11 @@ form {
   padding: 10px;
 }
 
+.alert {
+  font-size: larger;
+  color: red;
+}
+
 input,
 textarea {
   margin: 10px;
