@@ -5,6 +5,7 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import Llama from "./img/anoma-drama-llama.JPG";
 import Stream from "./img/streamosaurus.JPG";
+import "./style.css";
 
 const projects = [
   {
@@ -39,43 +40,40 @@ const projects = [
 function Portfolio() {
   return (
     <main>
-      <div>
-        <h1>Portfolio</h1>
-      </div>
+      <div className="page-container-portfolio">
+        <div className="page-title-portfolio">Portfolio</div>
 
-      <div>
-        {projects.map((element) => {
-          return (
-            <div key={element.id}>
-              <div>
-                <a
-                  href={element.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={element.image}
-                    alt="Screan capture of the project"
-                  />
-                </a>
-              </div>
+        <div className="project-container">
+          {projects.map((element) => {
+            return (
+              <div className="project-card" key={element.id}>
+                <div className="project-details">
+                  <p>{element.title}</p>
 
-              <div>
-                <p>{element.title}</p>
-                <p>
-                  <strong>Link to Repository: </strong>
                   <a
                     href={element.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GitHub
+                    GitHub Repo
                   </a>
-                </p>
+                </div>
+                <div>
+                  <a
+                    href={element.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={element.image}
+                      alt="Screan capture of the project"
+                    />
+                  </a>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </main>
   );

@@ -8,6 +8,7 @@
 // THEN I receive a notification if I have entered an invalid email address
 
 import React, { useState } from "react";
+import "./style.css";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -37,44 +38,50 @@ export default function Contact() {
 
   return (
     <main>
-      <div>
-        <h1>Contact Me</h1>
-      </div>
+      <div className="page-container-contact">
+        <div>
+          <div className="page-title-contact">Contact Me</div>
+        </div>
 
-      <div>
-        <h3>Email: wabarringer@gmail.com</h3>
-        <p>
-          Currently form submission is down. If you'd like to contact me please
-          use the email address provided above.
-        </p>
-      </div>
+        <div className="contact-details">
+          <p>
+            Currently form submissions are down. You can email me directly at{" "}
+            <a href="mailto:email@example.com"> wabarringer@gmail.com</a>
+          </p>
+        </div>
 
-      <form className="form">
-        <input
-          type="text"
-          placeholder="Name"
-          name="name"
-          onChange={handleInputChange}
-          value={name}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          onChange={handleInputChange}
-          value={email}
-          name="email"
-        />
-        <input
-          type="textarea"
-          placeholder="Message"
-          onChange={handleInputChange}
-          value={message}
-          name="message"
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
+        <form className="form">
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            onChange={handleInputChange}
+            value={name}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            onChange={handleInputChange}
+            value={email}
+            name="email"
+          />
+          <textarea
+            className="message"
+            type="textarea"
+            placeholder="Message"
+            onChange={handleInputChange}
+            value={message}
+            name="message"
+          />
+          <button
+            className="contact-button"
+            type="button"
+            onClick={handleFormSubmit}
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </main>
   );
 }

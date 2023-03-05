@@ -3,42 +3,43 @@
 
 import React from "react";
 import myResume from "./img/resume.JPG";
+import "./style.css";
 
 function Resume() {
   return (
     <main>
-      <div>
-        <h1>Resume</h1>
+      <div className="page-container-resume">
+        <div className="page-title-resume">Resume</div>
+        <div className="section-container">
+          <section className="resume-section">
+            <p>Languages:</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+          </section>
+
+          <section className="resume-section">
+            <p>Skills:</p>
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MySQL</li>
+              <li>Sequelize</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>React</li>
+              <li>Handlebars</li>
+            </ul>
+          </section>
+        </div>
+
+        <a href={myResume} download>
+          <button className="button-download">Download My Resume</button>
+        </a>
       </div>
-
-      <h2>Proficiencies</h2>
-      <section>
-        <p>Languages:</p>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
-        </ul>
-      </section>
-
-      <section>
-        <p>Skills:</p>
-        <ul>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>MySQL</li>
-          <li>Sequelize</li>
-          <li>MongoDB</li>
-          <li>Mongoose</li>
-          <li>React</li>
-          <li>Handlebars</li>
-        </ul>
-      </section>
-
-      <a href={myResume} download>
-        <button id="button-download">Download My Resume</button>
-      </a>
     </main>
   );
 }

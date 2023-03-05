@@ -1,0 +1,64 @@
+.page-container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2d080a;
+  color: #cfaf8c;
+  padding-bottom: 40px;
+  min-height: 87.59vh;
+}
+
+.page-title-contact {
+  font-size: xx-large;
+  padding: 30px;
+}
+
+.contact-details {
+  padding: 10px;
+  font-size: x-large;
+  width: 500px;
+}
+
+.contact-details a {
+  text-decoration: underline;
+  color: #cfaf8c;
+  font-weight: 1000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cfaf8c;
+  width: 500px;
+  height: 230px;
+  padding: 10px;
+}
+
+input,
+textarea {
+  margin: 10px;
+  width: 450px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.message {
+  resize: none;
+  height: 200px;
+}
+
+.contact-button {
+  background-color: #2d080a;
+  border-radius: 12px;
+  color: #cfaf8c;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+  border: #7c3626;
+  padding: 5px;
+  width: 100px;
+}

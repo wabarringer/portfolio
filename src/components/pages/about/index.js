@@ -3,23 +3,19 @@
 
 import React from "react";
 import Image from "./img/profile-2022.jpg";
+import "./style.css";
 
 export default function About() {
   return (
     <main>
-      <div>
-        <h1>About Me</h1>
-      </div>
+      <div className="page-container-about">
+        <div className="page-title">About Me</div>
+        <img src={Image} alt="My face!" />
 
-      <div className="profileImg">
-        <img src={Image} />
-      </div>
-
-      <div>
         <p>
           I'm a student developer, currently building a knowledge base in full
-          stack web and software development. Coding is completely new to me,
-          but I'm gaining new skills every minute of every day.
+          stack development. Coding is completely new to me, but I'm gaining new
+          skills every minute of every day.
         </p>
       </div>
     </main>

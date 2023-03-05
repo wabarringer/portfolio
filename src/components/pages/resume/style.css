@@ -1,0 +1,59 @@
+.page-container-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2d080a;
+  color: #cfaf8c;
+  padding-bottom: 40px;
+  min-height: 87.59vh;
+}
+
+.page-title-resume {
+  font-size: xx-large;
+  padding: 20px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: top;
+  justify-content: space-between;
+  background-color: #cfaf8c;
+  color: #2d080a;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 250px;
+}
+
+.resume-section p {
+  font-size: x-large;
+}
+
+.resume-section ul {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style-type: none;
+  padding-right: 13px;
+}
+
+.button-download {
+  background-color: #cfaf8c;
+  border-radius: 12px;
+  color: #2d080a;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+  border: #0e0806;
+  padding: 5px;
+  width: 250px;
+  margin: 30px;
+}

@@ -1,0 +1,49 @@
+.page-container-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2d080a;
+  color: #cfaf8c;
+  padding-bottom: 40px;
+  min-height: 87.59vh;
+}
+
+.page-container-portfolio img {
+  width: 500px;
+  height: 300px;
+}
+
+.page-title-portfolio {
+  font-size: xx-large;
+  padding: 20px;
+}
+
+.project-container {
+  position: relative;
+  padding: 10px;
+  background-color: #cfaf8c;
+}
+
+.project-card {
+  margin: 20px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  color: #2d080a;
+  font-size: larger;
+}
+
+.project-details p {
+  font-size: x-large;
+  font-weight: 1000;
+}
+
+.project-details a {
+  text-decoration: none;
+  color: #2d080a;
+}

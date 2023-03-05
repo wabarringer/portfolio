@@ -9,9 +9,9 @@ import React from "react";
 function Header({ currentPage, handlePageChange }) {
   return (
     <header>
-      <div>Andy Barringer</div>
+      <div className="header-name">Andy Barringer</div>
 
-      <ul className="nav nav-tabs">
+      <ul className="nav-tabs">
         <li className="nav-item">
           <a
             href="#about"
