@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8dde5ba3.css",
+    "main.js": "/portfolio/static/js/main.da1f2287.js",
+    "static/media/logo.png": "/portfolio/static/media/logo.4bd744834ca44c9b7610.png",
+    "static/media/profile-2022.jpg": "/portfolio/static/media/profile-2022.9533429376bbf6c9aed3.jpg",
+    "static/media/resume.JPG": "/portfolio/static/media/resume.7a6f6ea05c2a51f6bbae.JPG",
+    "static/media/streamosaurus.JPG": "/portfolio/static/media/streamosaurus.1fe2cfcea2316cb586b1.JPG",
+    "static/media/anoma-drama-llama.JPG": "/portfolio/static/media/anoma-drama-llama.59cd7e7cf3b86443b0b6.JPG",
+    "static/media/weather.JPG": "/portfolio/static/media/weather.63eecff5602bfbfbdee6.JPG",
+    "static/media/tech-blog.JPG": "/portfolio/static/media/tech-blog.8addf1523012134cebd4.JPG",
+    "static/media/quiz.JPG": "/portfolio/static/media/quiz.76fa32fd913fd197c370.JPG",
+    "index.html": "/portfolio/index.html",
+    "main.8dde5ba3.css.map": "/portfolio/static/css/main.8dde5ba3.css.map",
+    "main.da1f2287.js.map": "/portfolio/static/js/main.da1f2287.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dde5ba3.css",
+    "static/js/main.da1f2287.js"
+  ]
+}
