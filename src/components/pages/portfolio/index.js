@@ -4,6 +4,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import gitHubLogo from "./img/github-mark.png";
+import Check from "./img/friends-in-check.JPG";
 import Llama from "./img/anoma-drama-llama.JPG";
 import Stream from "./img/streamosaurus.JPG";
 import Chess from "./img/logo.png";
@@ -13,6 +14,22 @@ import Quiz from "./img/quiz.JPG";
 import "./style.css";
 
 const projects = [
+  {
+    // generate an id
+    id: uuidv4(),
+
+    // image of the deployed application (either a short animated GIF or screenshot)
+    image: Check,
+
+    // title of the project
+    title: "Friends in Check",
+
+    // link to the deployed application
+    link: "https://friends-in-check.netlify.app/",
+
+    // link to the corresponding GitHub repository
+    githubLink: "https://github.com/wabarringer/project-3-FRONT",
+  },
   {
     // generate an id
     id: uuidv4(),
