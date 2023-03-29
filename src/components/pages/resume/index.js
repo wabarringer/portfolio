@@ -2,7 +2,7 @@
 // THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 
 import React from "react";
-import myResume from "./img/AndyB_Resume_2023";
+import myResume from "./img/";
 import "./style.css";
 
 function Resume() {
@@ -36,7 +36,7 @@ function Resume() {
           </section>
         </div>
 
-        <a href={myResume} download>
+        <a href={myResume} download={myResume}>
           <button className="button-download">Download My Resume</button>
         </a>
       </div>
