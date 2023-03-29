@@ -13,9 +13,13 @@ export default function About() {
         <img src={Image} alt="My face!" />
 
         <p>
-          I'm a student developer, currently building a knowledge base in full
-          stack development. Coding is completely new to me, but I'm gaining new
-          skills every minute of every day.
+          As a recent graduate of the University of Washington Full Stack
+          Development Bootcamp, I am equipped with a strong foundation in full
+          stack development. With expertise in HTML, CSS, JavaScript, Node.js,
+          Sequelize and React, I am committed to building innovative,
+          user-friendly applications. While coding was new to me when I began
+          this journey, I am now a confident and passionate developer who is
+          always eager to learn and grow.
         </p>
       </div>
     </main>
