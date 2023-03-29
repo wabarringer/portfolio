@@ -2,7 +2,7 @@
 // THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 
 import React from "react";
-import myResume from "./img/";
+import myResume from "./img/AndyB_Resume_2023.pdf";
 import "./style.css";
 
 function Resume() {
