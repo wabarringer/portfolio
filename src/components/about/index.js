@@ -7,7 +7,7 @@ import "./style.css";
 
 export default function About() {
   return (
-    <main>
+    <section id="about">
       <div className="page-container-about">
         <div className="page-title">About Me</div>
         <img src={Image} alt="My face!" />
@@ -22,6 +22,6 @@ export default function About() {
           always eager to learn and grow.
         </p>
       </div>
-    </main>
+    </section>
   );
 }

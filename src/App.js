@@ -1,16 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
-import About from "./components/pages/about";
-import Portfolio from "./components/pages/portfolio";
-import Contact from "./components/pages/contact";
-import Resume from "./components/pages/resume";
+import Header from "./components/Header";
+import About from "./components/about";
+import Portfolio from "./components/portfolio";
+import Contact from "./components/contact";
+import Resume from "./components/resume";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <body>
-      <Navigation />
+      <Header />
       <About />
       <Portfolio />
       <Resume />

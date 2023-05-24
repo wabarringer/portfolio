@@ -5,54 +5,33 @@
 // THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
 
 import React from "react";
+import { Link } from "react-scroll";
 
-function Header({ currentPage, handlePageChange }) {
+function Header() {
   return (
     <header>
       <div className="header-name">Andy Barringer</div>
 
       <ul className="nav-tabs">
         <li className="nav-item">
-          <a
-            href="#about"
-            onClick={() => handlePageChange("about")}
-            className={currentPage === "about" ? "nav-link active" : "nav-link"}
-          >
+          <Link activeClass="active" smooth spy to="about">
             About
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="#portfolio"
-            onClick={() => handlePageChange("portfolio")}
-            className={
-              currentPage === "portfolio" ? "nav-link active" : "nav-link"
-            }
-          >
+          <Link activeClass="active" smooth spy to="portfolio">
             Portfolio
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="#contact"
-            onClick={() => handlePageChange("contact")}
-            className={
-              currentPage === "contact" ? "nav-link active" : "nav-link"
-            }
-          >
-            Contact
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#resume"
-            onClick={() => handlePageChange("resume")}
-            className={
-              currentPage === "resume" ? "nav-link active" : "nav-link"
-            }
-          >
+          <Link activeClass="active" smooth spy to="resume">
             Resume
-          </a>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link activeClass="active" smooth spy to="contact">
+            Contact
+          </Link>
         </li>
       </ul>
     </header>

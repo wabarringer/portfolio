@@ -7,7 +7,7 @@ import "./style.css";
 
 function Resume() {
   return (
-    <main>
+    <section id="resume">
       <div className="page-container-resume">
         <div className="page-title-resume">Resume</div>
         <div className="section-container">
@@ -40,7 +40,7 @@ function Resume() {
           <button className="button-download">Download My Resume</button>
         </a>
       </div>
-    </main>
+    </section>
   );
 }
 

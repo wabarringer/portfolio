@@ -60,7 +60,7 @@ export default function Contact() {
   };
 
   return (
-    <main>
+    <section id="contact">
       <div className="page-container-contact">
         <div>
           <div className="page-title-contact">Contact Me</div>
@@ -115,6 +115,6 @@ export default function Contact() {
           {messageError && <p>*Message field is empty</p>}
         </div>
       </div>
-    </main>
+    </section>
   );
 }

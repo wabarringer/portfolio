@@ -105,7 +105,7 @@ const projects = [
 
 function Portfolio() {
   return (
-    <main>
+    <section id="portfolio">
       <div className="page-container-portfolio">
         <div className="page-title-portfolio">Portfolio</div>
 
@@ -146,7 +146,7 @@ function Portfolio() {
           })}
         </div>
       </div>
-    </main>
+    </section>
   );
 }
 
