@@ -4,12 +4,15 @@
 import React from 'react';
 import Profile from './img/profile-2022.jpg';
 import GitHubIcon from './img/github-01.png';
+import LinkedInIcon from './img/linkedin-01.png';
+import TwitterIcon from './img/twitter-01.png';
+import InstagramIcon from './img/instagram-01.png';
 import './style.css';
 
 export default function About() {
   return (
     <section id='about'>
-      <div className='page-container-about'>
+      <div className='container-about'>
         <div id='about-card'>
           <p>
             I am a passionate full stack developer experienced in HTML, CSS,
@@ -29,6 +32,27 @@ export default function About() {
               rel='noopener noreferrer'
             >
               <img src={GitHubIcon} alt='GitHub icon' />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/andy-barringer/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={LinkedInIcon} alt='LinkedIn icon' />
+            </a>
+            <a
+              href='https://twitter.com/WAndyBarringer'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={TwitterIcon} alt='Twitter icon' />
+            </a>
+            <a
+              href='https://www.instagram.com/wabarringer/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={InstagramIcon} alt='Instagram icon' />
             </a>
           </div>
         </div>
