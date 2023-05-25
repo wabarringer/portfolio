@@ -5,6 +5,7 @@
 
 body {
   display: flex;
+  align-items: center;
   flex-direction: column;
   min-height: 100vh;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -12,49 +13,27 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   background-color: #130303;
   color: #cfaf8c;
-  min-height: 5vh;
-}
-
-.header-name {
-  font-size: xx-large;
-  font-weight: 1000;
-  padding-left: 8px;
-}
-
-.nav-tabs {
-  display: flex;
+  height: 25px;
+  min-width: 50vw;
+  position: fixed;
+  z-index: 1;
   list-style-type: none;
-  text-decoration-style: none;
+  margin-top: 2vh;
+  border-radius: 5px;
 }
 
 .nav-item {
-  padding-left: 10px;
-  padding-right: 8px;
   font-size: large;
-  font-weight: 1000;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: #cfaf8c;
-}
-
-footer {
+  cursor: pointer;
+  /* Gave nav items a width in order to prevent shifting on hover bold */
+  min-width: 4vw;
   display: flex;
-  flex-direction: column;
-  font-size: x-large;
-  font-weight: 1000;
-  background-color: #130303;
-  margin-top: auto;
-  min-height: 5vh;
+  justify-content: center;
 }
 
-footer a {
-  text-decoration: none;
-  color: #cfaf8c;
-  margin: 10px;
+.nav-item:hover {
+  font-weight: 1000;
 }

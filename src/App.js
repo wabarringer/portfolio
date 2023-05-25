@@ -1,21 +1,18 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import About from "./components/about";
 import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
 import Resume from "./components/resume";
-import Footer from "./components/Footer";
 
 function App() {
   return (
     <body>
-      <Header />
+      <Navbar />
       <About />
       <Portfolio />
       <Resume />
       <Contact />
-      <Footer />
     </body>
   );
 }

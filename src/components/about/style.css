@@ -1,23 +1,41 @@
 .page-container-about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  background-color: #2d080a;
-  color: #cfaf8c;
+  /* align-content: center; */
+  justify-content: center;
+  background-image: url('./img/about-background.jpg');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  color: #f1eaea;
   min-height: 87.59vh;
 }
 
-.page-title {
-  font-size: xx-large;
-  padding: 40px;
-}
-
-.page-container-about img {
+#profile-img {
   width: 300px;
   border: #cfaf8c solid 2px;
 }
 
+#about-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
 .page-container-about p {
-  font-size: x-large;
-  padding: 50px;
+  font-size: large;
+
+  text-shadow: black 1px 1px;
+}
+
+#social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+#social-icons img {
+  width: 35px;
 }
