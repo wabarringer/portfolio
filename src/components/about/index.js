@@ -2,7 +2,7 @@
 // THEN I see a recent photo or avatar of the developer and a short bio about them
 
 import React from 'react';
-import Profile from './img/profile-2022.jpg';
+// import Profile from './img/profile-2022.jpg';
 import GitHubIcon from './img/github-01.png';
 import LinkedInIcon from './img/linkedin-01.png';
 import TwitterIcon from './img/twitter-01.png';
@@ -57,7 +57,7 @@ export default function About() {
               </a>
             </div>
           </div>
-          <img id='profile-img' src={Profile} alt='My face!' />
+          {/* <img id='profile-img' src={Profile} alt='My face' /> */}
         </div>
       </div>
     </section>

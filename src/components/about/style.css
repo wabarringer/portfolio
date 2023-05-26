@@ -1,15 +1,17 @@
+#about {
+  height: 750px;
+}
+
 #container-about {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* align-content: center; */
   justify-content: space-around;
   background-image: url('./img/about-background.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   color: #f1eaea;
-  position: relative;
-  height: 700px;
+  height: 100%;
 }
 
 #about-card {
