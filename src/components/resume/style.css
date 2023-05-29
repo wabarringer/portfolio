@@ -50,3 +50,10 @@
     margin: 25px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .dev-icons img {
+    width: 35px;
+    margin: 25px;
+  }
+}

@@ -73,3 +73,19 @@ textarea::placeholder {
   padding: 5px;
   width: 100px;
 }
+
+@media screen and (max-width: 625px) {
+  .container-contact {
+    width: 90%;
+  }
+
+  .contact-details {
+    width: 90%;
+  }
+
+  input,
+  textarea {
+    margin: 10px;
+    width: 70%;
+  }
+}

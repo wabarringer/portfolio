@@ -98,3 +98,9 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .container-portfolio {
+    margin-top: 25%;
+  }
+}
