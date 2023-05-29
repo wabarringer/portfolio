@@ -100,7 +100,11 @@
 }
 
 @media screen and (max-width: 500px) {
+  #portfolio-title {
+    margin-top: 200px;
+  }
+
   .container-portfolio {
-    margin-top: 25%;
+    margin-top: 25px;
   }
 }
