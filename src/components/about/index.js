@@ -7,6 +7,7 @@ import GitHubIcon from './img/github-01.png';
 import LinkedInIcon from './img/linkedin-01.png';
 import TwitterIcon from './img/twitter-01.png';
 import InstagramIcon from './img/instagram-01.png';
+import ProfileImage from './img/about-profile.jpg';
 import './style.css';
 
 export default function About() {
@@ -58,8 +59,8 @@ export default function About() {
               </a>
             </div>
           </div>
-          {/* <img id='profile-img' src={Profile} alt='My face' /> */}
         </div>
+        <img src={ProfileImage} id='profile-img' alt='profile'></img>
       </div>
     </section>
   );

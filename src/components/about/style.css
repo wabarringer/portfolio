@@ -1,5 +1,6 @@
 #about {
   height: 100vh;
+  width: auto;
 }
 
 #container-about {
@@ -53,7 +54,42 @@
 #profile-img {
   width: 300px;
   height: 300px;
-  border: rgba(0, 0, 0, 0.6) solid 2px;
+  border: solid 2px #081221;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+}
+
+@media screen and (max-width: 1500px) {
+  #container-about {
+    background-image: none;
+    background: #102342;
+  }
+
+  #about-card {
+    width: 70%;
+    right: auto;
+    bottom: 25%;
+  }
+
+  #profile-img {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #about-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #about-card {
+    margin-top: 20%;
+  }
+
+  #profile-img {
+    margin-top: 15%;
+  }
 }
