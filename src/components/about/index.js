@@ -15,7 +15,8 @@ export default function About() {
       <div id='container-about'>
         <div id='about-card'>
           <div>
-            <p>
+            <p id='about-name'>Andy Barringer</p>
+            <p id='about-paragraph'>
               I am a passionate full stack developer experienced in HTML, CSS,
               JavaScript, Node.js, Sequelize, and React. I specialize in
               creating innovative, user-friendly applications. With a commitment

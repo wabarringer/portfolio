@@ -11,6 +11,7 @@
   font-size: xx-large;
   padding: 20px;
   color: white;
+  padding-top: 50px;
 }
 
 .container-portfolio {
@@ -29,17 +30,21 @@
   margin: 20px;
 }
 
+.project-column a {
+  text-decoration: none;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 400px;
+  margin-bottom: 50px;
 }
 
 .project-title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 8px;
   color: white;
@@ -49,10 +54,12 @@
 
 .gitHub-logo {
   width: 35px;
+  padding-left: 10px;
 }
 
 .project-description {
   color: white;
+  padding: 10px;
 }
 
 .project-img {

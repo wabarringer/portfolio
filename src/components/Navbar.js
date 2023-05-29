@@ -4,29 +4,29 @@
 // WHEN I click on a navigation title
 // THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
 
-import React from "react";
-import { Link } from "react-scroll";
+import React from 'react';
+import { Link } from 'react-scroll';
 
 function Navbar() {
   return (
     <header>
-      <li className="nav-item">
-        <Link activeClass="active" smooth spy to="about">
+      <li className='nav-item'>
+        <Link activeClass='active' smooth spy to='about'>
           About
         </Link>
       </li>
-      <li className="nav-item">
-        <Link activeClass="active" smooth spy to="portfolio">
-          Portfolio
+      <li className='nav-item'>
+        <Link activeClass='active' smooth spy to='portfolio'>
+          Projects
         </Link>
       </li>
-      <li className="nav-item">
-        <Link activeClass="active" smooth spy to="resume">
+      <li className='nav-item'>
+        <Link activeClass='active' smooth spy to='resume'>
           Resume
         </Link>
       </li>
-      <li className="nav-item">
-        <Link activeClass="active" smooth spy to="contact">
+      <li className='nav-item'>
+        <Link activeClass='active' smooth spy to='contact'>
           Contact
         </Link>
       </li>

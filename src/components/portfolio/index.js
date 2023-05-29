@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import gitHubLogo from './img/github-mark.png';
+import gitHubLogo from './img/github-01.png';
 import Check from './img/friends-in-check.JPG';
 import Llama from './img/anoma-drama-llama.JPG';
 import Stream from './img/streamosaurus.JPG';
@@ -29,7 +29,7 @@ const projects1 = [
     link: 'https://tech-blog-wabarringer.herokuapp.com/home',
     githubLink: 'https://github.com/wabarringer/tech-blog',
     description:
-      'A search tool that utilizes data from the TMDB API in order to allow users to find where a specific movie or TV show is streaming. The UI is constructed using the Bruma CSS framework, and the jQuery library.',
+      'A blog posting web application where users can post blog entries on anything about tech. As a full stack program, it uses MongoDB, Express, React, Node (MERN) to give each user a fully functional experience. You can post, edit, delete and comment on other entries.',
   },
 ];
 
@@ -41,7 +41,7 @@ const projects2 = [
     link: 'https://wabarringer.github.io/Anoma_Drama_Llama/',
     githubLink: 'https://github.com/wabarringer/Anoma_Drama_Llama',
     description:
-      'A search tool that utilizes data from the TMDB API in order to allow users to find where a specific movie or TV show is streaming. The UI is constructed using the Bruma CSS framework, and the jQuery library.',
+      'A journal and mood tracker that uses SQL. The site gives users the option to create private journal entries or post anonymously or publicly. As an incentive to stay up to date on regular mood and journal entries we’ve added a digital pet feature that will stay happy the more you interact with the site. ',
   },
   {
     id: uuidv4(),
@@ -50,7 +50,7 @@ const projects2 = [
     link: 'https://wabarringer.github.io/weather-dashboard/',
     githubLink: 'https://github.com/wabarringer/weather-dashboard',
     description:
-      'A search tool that utilizes data from the TMDB API in order to allow users to find where a specific movie or TV show is streaming. The UI is constructed using the Bruma CSS framework, and the jQuery library.',
+      'A front-end website that utilizes the Open Weather Map API to provide the user with accurate weather data for any specific area.',
   },
 ];
 
@@ -71,7 +71,7 @@ const projects3 = [
     link: 'https://wabarringer.github.io/quiz/',
     githubLink: 'https://github.com/wabarringer/quiz',
     description:
-      'A search tool that utilizes data from the TMDB API in order to allow users to find where a specific movie or TV show is streaming. The UI is constructed using the Bruma CSS framework, and the jQuery library.',
+      'A simply front-end quiz game based on Washington state. The application showcases a good understanding of JavaScript logic and DOM functionality.',
   },
 ];
 
@@ -83,96 +83,102 @@ function Portfolio() {
         <div className='project-column'>
           {projects1.map((element) => {
             return (
-              <div className='project-card' key={element.id}>
-                <div className='project-title'>
-                  <p>{element.title}</p>
+              <a href={element.link} target='_blank' rel='noopener noreferrer'>
+                <div className='project-card' key={element.id}>
+                  <div className='project-title'>
+                    <p>{element.title}</p>
 
-                  <a
-                    href={element.githubLink}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+                    <a
+                      href={element.githubLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <img
+                        className='gitHub-logo'
+                        src={gitHubLogo}
+                        alt='The GitHub logo'
+                      />
+                    </a>
+                  </div>
+                  <div className='project-description'>
+                    <p>{element.description}</p>
+                  </div>
+                  <div className='project-img'>
                     <img
-                      className='gitHub-logo'
-                      src={gitHubLogo}
-                      alt='The GitHub logo'
+                      src={element.image}
+                      alt='Screan capture of the project'
                     />
-                  </a>
+                  </div>
                 </div>
-                <div className='project-description'>
-                  <p>{element.description}</p>
-                </div>
-                <div className='project-img'>
-                  <img
-                    src={element.image}
-                    alt='Screan capture of the project'
-                  />
-                </div>
-              </div>
+              </a>
             );
           })}
         </div>
         <div className='project-column'>
           {projects2.map((element) => {
             return (
-              <div className='project-card' key={element.id}>
-                <div className='project-title'>
-                  <p>{element.title}</p>
+              <a href={element.link} target='_blank' rel='noopener noreferrer'>
+                <div className='project-card' key={element.id}>
+                  <div className='project-title'>
+                    <p>{element.title}</p>
 
-                  <a
-                    href={element.githubLink}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+                    <a
+                      href={element.githubLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <img
+                        className='gitHub-logo'
+                        src={gitHubLogo}
+                        alt='The GitHub logo'
+                      />
+                    </a>
+                  </div>
+                  <div className='project-description'>
+                    <p>{element.description}</p>
+                  </div>
+                  <div className='project-img'>
                     <img
-                      className='gitHub-logo'
-                      src={gitHubLogo}
-                      alt='The GitHub logo'
+                      src={element.image}
+                      alt='Screan capture of the project'
                     />
-                  </a>
+                  </div>
                 </div>
-                <div className='project-description'>
-                  <p>{element.description}</p>
-                </div>
-                <div className='project-img'>
-                  <img
-                    src={element.image}
-                    alt='Screan capture of the project'
-                  />
-                </div>
-              </div>
+              </a>
             );
           })}
         </div>
         <div className='project-column'>
           {projects3.map((element) => {
             return (
-              <div className='project-card' key={element.id}>
-                <div className='project-title'>
-                  <p>{element.title}</p>
+              <a href={element.link} target='_blank' rel='noopener noreferrer'>
+                <div className='project-card' key={element.id}>
+                  <div className='project-title'>
+                    <p>{element.title}</p>
 
-                  <a
-                    href={element.githubLink}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+                    <a
+                      href={element.githubLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <img
+                        className='gitHub-logo'
+                        src={gitHubLogo}
+                        alt='The GitHub logo'
+                      />
+                    </a>
+                  </div>
+                  <div className='project-description'>
+                    <p>{element.description}</p>
+                  </div>
+                  <div className='project-img'>
                     <img
-                      className='gitHub-logo'
-                      src={gitHubLogo}
-                      alt='The GitHub logo'
+                      src={element.image}
+                      alt='Screan capture of the project'
                     />
-                  </a>
+                  </div>
                 </div>
-                <div className='project-description'>
-                  <p>{element.description}</p>
-                </div>
-                <div className='project-img'>
-                  <img
-                    src={element.image}
-                    alt='Screan capture of the project'
-                  />
-                </div>
-              </div>
+              </a>
             );
           })}
         </div>

@@ -1,5 +1,5 @@
 #about {
-  height: 900px;
+  height: 100vh;
 }
 
 #container-about {
@@ -18,7 +18,7 @@
 #about-card {
   display: flex;
   flex-direction: row;
-  min-height: 30%;
+  height: auto;
   width: 25%;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
@@ -28,7 +28,13 @@
   bottom: 12%;
 }
 
-#container-about p {
+#about-name {
+  font-size: xx-large;
+  text-shadow: black 1px 1px;
+  padding-bottom: 10px;
+}
+
+#about-paragraph {
   font-size: large;
   text-shadow: black 1px 1px;
 }
