@@ -1,60 +1,68 @@
-.page-container-portfolio {
+#portfolio {
+  background-color: #102342;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#portfolio-title {
+  font-size: xx-large;
+  padding: 20px;
+  color: white;
+}
+
+.container-portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px;
+  width: 14%;
+  height: auto;
+  margin: 20px;
+}
+
+.project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2d080a;
-  color: #cfaf8c;
-  padding-bottom: 40px;
-  min-height: 87.59vh;
+  height: 400px;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  color: white;
+  font-size: large;
+  font-weight: 1000;
 }
 
 .gitHub-logo {
   width: 35px;
 }
 
+.project-description {
+  color: white;
+}
+
 .project-img {
-  background-color: #2d080a;
-  width: 500px;
-  height: 300px;
-  opacity: 50%;
-  border: #2d080a solid 3px;
+  margin-bottom: auto;
 }
 
-.project-img:hover {
-  opacity: 100%;
-}
+.project-img img {
+  width: 250px;
+  height: 150px;
 
-.page-title-portfolio {
-  font-size: xx-large;
-  padding: 20px;
-}
-
-.project-container {
-  position: relative;
-  padding: 10px;
-  background-color: #cfaf8c;
-}
-
-.project-card {
-  margin: 20px;
-}
-
-.project-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  color: #2d080a;
-  font-size: larger;
-}
-
-.project-details p {
-  font-size: x-large;
-  font-weight: 1000;
-}
-
-.project-details a {
-  text-decoration: none;
-  color: #2d080a;
+  /* display: flex; */
+  /* align-self: flex-end; */
 }

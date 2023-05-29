@@ -1,14 +1,22 @@
-.page-container-contact {
+#contact {
+  background-color: #102342;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2d080a;
-  color: #cfaf8c;
+  background-color: #02645e;
+  color: white;
   padding-bottom: 40px;
-  min-height: 87.59vh;
 }
 
-.page-title-contact {
+.title-contact {
   font-size: xx-large;
   padding: 30px;
 }
@@ -21,7 +29,7 @@
 
 .contact-details a {
   text-decoration: underline;
-  color: #cfaf8c;
+  color: white;
   font-weight: 1000;
 }
 
@@ -29,7 +37,6 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #cfaf8c;
   width: 500px;
   height: 230px;
   padding: 10px;
@@ -48,7 +55,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .message {
@@ -57,13 +64,12 @@ textarea::placeholder {
 }
 
 .contact-button {
-  background-color: #2d080a;
+  background-color: #102342;
   border-radius: 12px;
-  color: #cfaf8c;
+  color: white;
   cursor: pointer;
   font-size: larger;
   font-weight: 700;
-  border: #7c3626;
   padding: 5px;
   width: 100px;
 }
