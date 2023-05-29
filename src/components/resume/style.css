@@ -18,15 +18,17 @@
 .title-resume {
   font-size: xx-large;
   padding: 20px;
+  padding-top: 50px;
 }
 
-.skills {
+.skill-row {
   display: flex;
   flex-direction: row;
 }
 
 .dev-icons img {
   width: 75px;
+  margin: 25px;
 }
 
 .button-download {
@@ -40,4 +42,24 @@
   padding: 5px;
   width: 250px;
   margin: 30px;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

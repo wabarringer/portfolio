@@ -71,7 +71,7 @@ const projects3 = [
     link: 'https://wabarringer.github.io/quiz/',
     githubLink: 'https://github.com/wabarringer/quiz',
     description:
-      'A simply front-end quiz game based on Washington state. The application showcases a good understanding of JavaScript logic and DOM functionality.',
+      'A simple front-end quiz game based on Washington state. The application showcases a good understanding of JavaScript logic and DOM functionality.',
   },
 ];
 

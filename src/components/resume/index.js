@@ -3,7 +3,7 @@ import myResume from './img/AndyB_Resume_2023.pdf';
 import { v4 as uuidv4 } from 'uuid';
 import './style.css';
 
-const Devicons = [
+const Devicons1 = [
   {
     id: uuidv4(),
     name: 'HTML',
@@ -26,6 +26,14 @@ const Devicons = [
   },
   {
     id: uuidv4(),
+    name: 'TypeScript',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+  },
+];
+
+const Devicons2 = [
+  {
+    id: uuidv4(),
     name: 'Node.js',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
   },
@@ -33,6 +41,24 @@ const Devicons = [
     id: uuidv4(),
     name: 'MySQL',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+  },
+  {
+    id: uuidv4(),
+    name: 'Sequelize',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg',
+  },
+  {
+    id: uuidv4(),
+    name: 'MongoDB',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+  },
+];
+
+const Devicons3 = [
+  {
+    id: uuidv4(),
+    name: 'React',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
   },
   {
     id: uuidv4(),
@@ -49,26 +75,7 @@ const Devicons = [
     name: 'Handlebars',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg',
   },
-  {
-    id: uuidv4(),
-    name: 'Sequelize',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg',
-  },
-  {
-    id: uuidv4(),
-    name: 'MongoDB',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
-  },
-  {
-    id: uuidv4(),
-    name: 'React',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-  },
-  {
-    id: uuidv4(),
-    name: 'TypeScript',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-  },
+
   {
     id: uuidv4(),
     name: 'SocketIO',
@@ -81,17 +88,35 @@ function Resume() {
     <section id='resume'>
       <div className='container-resume'>
         <div className='title-resume'>Skillset</div>
-        <div className='skills'>
-          {Devicons.map((element) => {
+        <div className='skill-row'>
+          {Devicons1.map((element) => {
             return (
               <div className='dev-icons' key={element.id}>
-                <img src={element.icon} alt='Dev icon' />
+                <img src={element.icon} alt='Dev icon' title={element.name} />
+              </div>
+            );
+          })}
+        </div>
+        <div className='skill-row'>
+          {Devicons2.map((element) => {
+            return (
+              <div className='dev-icons' key={element.id}>
+                <img src={element.icon} alt='Dev icon' title={element.name} />
+              </div>
+            );
+          })}
+        </div>
+        <div className='skill-row'>
+          {Devicons3.map((element) => {
+            return (
+              <div className='dev-icons' key={element.id}>
+                <img src={element.icon} alt='Dev icon' title={element.name} />
               </div>
             );
           })}
         </div>
 
-        <a href={myResume} download={myResume}>
+        <a href={myResume} target='_blank' rel='noopener noreferrer'>
           <button className='button-download'>View My Resume</button>
         </a>
       </div>
