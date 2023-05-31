@@ -38,7 +38,7 @@ const projects2 = [
     id: uuidv4(),
     image: Llama,
     title: 'Anoma Drama Llama',
-    link: 'https://wabarringer.github.io/Anoma_Drama_Llama/',
+    link: 'https://anoma-drama-llama.herokuapp.com/',
     githubLink: 'https://github.com/wabarringer/Anoma_Drama_Llama',
     description:
       'A journal and mood tracker that uses SQL. The site gives users the option to create private journal entries or post anonymously or publicly. As an incentive to stay up to date on regular mood and journal entries we’ve added a digital pet feature that will stay happy the more you interact with the site. ',
