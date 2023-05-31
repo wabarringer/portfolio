@@ -28,6 +28,11 @@ export default function About() {
               expectations by delivering solutions that meet their needs. Let's
               connect and create extraordinary digital experiences together.
             </p>
+
+            <a href='mailto:wabarringer@gmail.com' id='about-email'>
+              wabarringer@gmail.com
+            </a>
+
             <div id='social-icons'>
               <a
                 href='https://github.com/wabarringer'

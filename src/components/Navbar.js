@@ -25,11 +25,6 @@ function Navbar() {
           Resume
         </Link>
       </li>
-      <li className='nav-item'>
-        <Link activeClass='active' smooth spy to='contact'>
-          Contact
-        </Link>
-      </li>
     </header>
   );
 }
